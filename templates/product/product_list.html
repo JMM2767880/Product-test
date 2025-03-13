@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% load  static %}
+{% block extra_title %}ProductList{% endblock extra_title %}
+{% block extra_css %}
+	<link rel="stylesheet" type="text/css" href="{% static "css/product/product_list.css" %}">
+{% endblock extra_css %}
+{% block content %}
+    
+	<section id="products-list">
+		<div class="container-fluid">
+			<div class="row justify-content-center justify-content-md-end mt-5">
+				<div style="width: fit-content;">
+					<form class="d-flex" role="search" id="form-search">
+				        <input class="form-control me-2" type="search" placeholder="Marca o modelo" aria-label="Search">
+				        <button class="btn btn-outline-primary">Buscar</button>
+				      </form>
+				</div>
+			</div>
+			<div class="row mt-5 all-products">
+				{% if products|length != 0 %}
+					{% for product in products %}
+						<div class="col-12 col-sm-6 col-lg-4 col-xl-3 product-item">
+							<div class="row justify-content-center mb-5">
+								<img src="{{ product.imgUrl }}" alt="{{ product.model }}">
+								<h3 class="text-center">{{ product.brand }} {{ product.model }}</h3>
+								<p class="text-center">Desde {% if product.price != ''%}{{ product.price }}{% else %} - {% endif %}€</p>
+								<div class="row links justify-content-center align-items-center">
+									<a href="/product/{{ product.slug }}/" class="btn btn-primary info-link">Ver producto</a>
+								</div>
+							</div>
+						</div>
+					{% endfor %}
+				{% else %}
+					<p class="no-elements">No hay productos que coincidan con su búsqueda.</p>
+				{% endif %}
+
+			</div>
+		</div>
+	</section>
+
+{% endblock %}
+
+{% block extra_script %}
+	<script type="text/javascript" src="{% static "js/product/product_list.js" %}"></script>
+{% endblock extra_script %}

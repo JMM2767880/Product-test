@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+{% load  static %}
+{% block extra_title %}ProductList{% endblock extra_title %}
+{% block extra_css %}
+	<link rel="stylesheet" type="text/css" href="{% static "css/product/product_detail.css" %}">
+{% endblock extra_css %}
+{% block content %}
+    
+	<section id="breadcrumb">
+		<div class="container">
+			<div class="row py-4">
+				<nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+					<ol class="breadcrumb mb-0">
+						<li class="breadcrumb-item" style="font-size: 18px;"><a href="{% url 'get-products' %}">Productos</a></li>
+						<li class="breadcrumb-item active" aria-current="page" style="font-size: 18px;">{{ product.brand }} {{ product.model }}</li>
+					</ol>
+				</nav>
+			</div>
+		</div>
+	</section>
+
+	<section id="info-product" class="mt-5">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-4">
+					<div class="row">
+						<img src="{{ product.imgUrl }}" src="{{ product.brand }} {{ product.model }}">
+					</div>
+				</div>
+				<div class="col-md-6 px-3 ps-md-5">
+					<h1>{{ product.brand }} {{ product.model }}</h1>
+					<p><b>Sistema Operativo:</b> {{ product.os }}</p>
+					<p><b>CPU:</b> {{ product.cpu }}</p>
+					<p><b>RAM:</b> {{ product.ram }}</p>
+					<p><b>Resolución de Pantalla:</b> {{ product.displayResolution }}</p>
+					<p><b>Batería:</b> {{ product.battery }}</p>
+					<p><b>Dimensiones:</b> {{ product.dimentions }}</p>
+					<p><b>Peso:</b> {{ product.weight }}</p>
+					<p><b>Cámaras:</b></p>
+					<ul>
+						<li>Frontal</li>
+						<ul>
+							<li>{{ product.cameras.primaryCamera.0 }}</li>
+							<li>{{ product.cameras.primaryCamera.1 }}</li>
+						</ul>
+						<li>Trasera</li>
+						<ul>
+							<li>{{ product.cameras.secondaryCmera.0 }}</li>
+							<li>{{ product.cameras.secondaryCmera.1 }}</li>
+						</ul>
+					</ul>
+
+					<div class="row options mb-4">
+						<div class="colors"><p><b>Colores:</b></p> {% for color in product.colors %} <div class="color-div{% if forloop.counter == 1 %} active{% endif %}" style="background-color: {{ color.name }};" title="{{ color.name }}" data-color="{{ color.code }}"></div> {%endfor%}</div>
+
+						<label for="storage-select"><b>Almacenamiento:</b></label>
+						<select id="storage-select" class="form-select" aria-label="Selección de almacenamiento">
+							{% for storage in product.storages %}
+								<option value="{{ storage.code }}">{{ storage.name }}</option>
+							{% endfor %}
+						</select>
+					</div>
+					
+					{% csrf_token %}
+					<button class="btn btn-primary" id="buy-product">Comprar <i class="fa-solid fa-chevron-right"></i></button>
+				</div>
+			</div>			
+		</div>
+	</section>
+
+{% endblock %}
+
+{% block extra_script %}
+	<script type="text/javascript" src="{% static "js/product/product_detail.js" %}"></script>
+{% endblock extra_script %}
