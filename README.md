@@ -121,6 +121,8 @@ Si queremos eliminar un producto, simplemente hay que pulsar sobre el icono circ
 
 ![image](https://github.com/user-attachments/assets/151be0b2-6510-4969-8d85-9424447a2e1c)
 
+Por cierto el código está comentado.
+
 
 
 
