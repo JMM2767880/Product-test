@@ -78,10 +78,29 @@ Para instalar y ejecutar este proyecto en tu máquina local, sigue estos pasos:
 ![image](https://github.com/user-attachments/assets/6e32abae-d7ec-45c9-bb20-30df16fb3b60)
 ![image](https://github.com/user-attachments/assets/778b0152-0856-4d08-8738-7c20b6de32ee)
 
+#### Carta de producto
+En la carta del producto aparecen los siguientes datos:
+- Imagen.
+- Marca y modelo.
+- Precio.
+- Botón para poder acceder a la información del producto.
+
+![image](https://github.com/user-attachments/assets/fb12c2a4-8076-47cb-8e79-98cb53febb88)
+
+### Información de un producto
+Al pulsar en el botón que dice "Ver producto" podremos acceder a la pantalla que nos muestra la información del producto, en esta pantalla se muestran los siguientes datos:
+- Sistema Operativo.
+- CPU.
+- RAM.
+- Resolución de Pantalla.
+- Batería.
+- Dimensiones.
+- Peso.
+- Cámaras
 
 
   
-- 
+
 
 
 
