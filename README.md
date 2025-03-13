@@ -53,8 +53,12 @@ Para instalar y ejecutar este proyecto en tu máquina local, sigue estos pasos:
     python manage.py runserver
 ```
 
-8. **En el navegador accedemos:**
-   
+8. **En el navegador accedemos:** (Normalmente es localhost)
+- http://localhost:8000/
+- http://127.0.0.1:8000/
+
+## Guía de usuario
+
 
 
 
