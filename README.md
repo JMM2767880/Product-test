@@ -1,4 +1,4 @@
-# Test deProductos
+# Test de Productos
 
 Este es un proyecto de ejemplo que utiliza varias tecnologías modernas para la creación de una aplicación web.
 
