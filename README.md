@@ -97,6 +97,27 @@ Al pulsar en el botón que dice "Ver producto" podremos acceder a la pantalla qu
 - Dimensiones.
 - Peso.
 - Cámaras
+- Colores.
+- Almacenamiento.
+
+  ![image](https://github.com/user-attachments/assets/9356ae14-f0dd-426c-8d4c-077bdfdf76cb)
+
+Tenemos un Breadcrump en el cual aparece un enlace para ir a la pantalla principal, la marca y el modelo del producto.
+Podemos seleccionar el color y el almacenamiento del producto seleccionado para añadirlo al carrito.
+![image](https://github.com/user-attachments/assets/df8b413f-7ad2-4f4a-a464-7785eadf4cf8)
+
+Posteriormente pulsamos en botón que dice "Comprar" y el producto se añadirá instantáneamente al carrito (el saldo se actualiza también).
+
+![image](https://github.com/user-attachments/assets/c777c363-08f8-49f7-bb39-d716da9692db)
+
+![image](https://github.com/user-attachments/assets/edf8d23e-03ac-46f0-8cdd-4a16ff1b4a43)
+
+
+
+
+
+
+
 
 
   
