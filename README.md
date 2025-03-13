@@ -20,29 +20,41 @@ Este es un proyecto de ejemplo que utiliza varias tecnologías modernas para la 
 
 Para instalar y ejecutar este proyecto en tu máquina local, sigue estos pasos:
 
-1 **Crea una carpeta en la ubicación que quieras trabajar**
+1. **Crea una carpeta en la ubicación que quieras trabajar**.
 
-2. **Accede a la carpeta**
+2. **Accede a la carpeta**:
 ```bash
     cd carpeta-proyecto
-    ```
-3. **Accede a la carpeta**
-```bash
-    cd carpeta-proyecto
-    ```
-4. Crea dentro de la carpeta un entorno virtual
+```
+
+3. **Crea un entorno virtual**:
 ```bash
     python -m venv mi-proyecto-venv
-    ```
+```
 
-1. **Clona el repositorio**:
-    ```bash
+4. **Activa el entorno virtual**:
+```bash
+    cd mi-proyecto-venv
+    cd Script
+    activate
+```
+
+5. **Volvemos a la carpeta principal (carpeta-proyecto)**
+
+6. **Descargamos el repositorio:**
+```bash
     git clone https://github.com/JMM2767880/Product-test.git
-    ```
-2. **Crea un entorno virtual**
-3. **Accede a la carpeta del proyecto**:
-    ```bash
+```
+
+7. **Instalamos las librerías pip necesarias:**
+   Desde nuestra carpeta raíz ejecutamos los siguientes comandos
+```bash
     cd producttest
-    ```
+    python manage.py runserver
+```
+
+8. **En el navegador accedemos:**
+   
+
 
 
