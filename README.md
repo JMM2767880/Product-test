@@ -4,13 +4,13 @@ Este es un proyecto de ejemplo que utiliza varias tecnologías modernas para la 
 
 ## Tecnologías Usadas
 
-- **Python**
-- **Django**
-- **JavaScript**
-- **CSS**
-- **HTML**
-- **Jinja2**
-- **Bootstrap**
+- **Python**: Para gestionar llamadas a la API desde el backend.
+- **Django**: Framework para crear aplicaciones webs escalables con Python.
+- **JavaScript**: Para gestionar cada evento y la persistencia de los datos para el carrito, la búsqueda, en el lado del cliente.
+- **CSS**: Utilizado para diseñar las pantallas junto con HTML.
+- **HTML**: Utilizado para crear la estructura de cada pantalla.
+- **Jinja2**: Se utiliza para conectar las variables de Python del backend con las plantillas HTML.
+- **Bootstrap**: Responsividad y utilización de algunos componentes ya prediseñados
 
 ## Instalación (Windows)
 
@@ -111,6 +111,18 @@ Posteriormente pulsamos en botón que dice "Comprar" y el producto se añadirá 
 ![image](https://github.com/user-attachments/assets/c777c363-08f8-49f7-bb39-d716da9692db)
 
 ![image](https://github.com/user-attachments/assets/edf8d23e-03ac-46f0-8cdd-4a16ff1b4a43)
+
+Incluso si cambiamos de pantalla a la principal seguimos manteniendo el mismo carrito:
+![image](https://github.com/user-attachments/assets/477782cb-b018-4c47-b688-f627f1487681)
+
+Si queremos eliminar un producto, simplemente hay que pulsar sobre el icono circular con un "-" en el producto del carrito.
+
+![image](https://github.com/user-attachments/assets/f02843df-0543-49b9-a37b-0cc81f5e67e1)
+
+![image](https://github.com/user-attachments/assets/151be0b2-6510-4969-8d85-9424447a2e1c)
+
+
+
 
 
 
