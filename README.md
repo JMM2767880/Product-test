@@ -47,7 +47,7 @@ Para instalar y ejecutar este proyecto en tu máquina local, sigue estos pasos:
 ```
 
 7. **Instalamos las librerías pip necesarias:**
-   Desde nuestra carpeta raíz ejecutamos los siguientes comandos
+   Desde nuestra carpeta raíz ejecutamos los siguientes comandos (en la carpeta "producttest/producttest" hay un archivo llamado requirements.txt con las librerías necesarias)
 ```bash
     cd producttest
     python manage.py runserver
